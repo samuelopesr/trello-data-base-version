@@ -25,31 +25,31 @@
         <div class="animate__animated animate__bounceInUp" id="signup">
             <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 
-            <form action="">
+            <form action="" method="POST">
 
                  
                 <label for="inome">Nome</label>
-                <input class="inputs" id="inome
+                <input required name="nome" class="inputs" id="inome
                 " placeholder="Nome completo" type="text">
 
                 <label for="imail">E-mail</label>
-                <input class="inputs" id="imail" placeholder="E-mail" type="text">
+                <input required name="email" class="inputs" id="imail" placeholder="E-mail" type="text">
 
                 <label for="isenha">Senha</label>
-                <input class="inputs" id="isenha" placeholder="Senha" type="text">
+                <input name="senha" class="inputs" id="isenha" placeholder="Senha" type="text">
 
 
                 <label for="data">Data de nascimento</label>
-                <input type="date" id="data" name="data">
+                <input required name="nascimento" type="date" id="data" name="data">
 
                 <label for="sexo">Sexo</label>
-                <select name="sexo" id="escolha">
+                <select required name="sexo" id="escolha">
                     <option value="Masculino">Masculino</option>
                     <option value="Feminino">Feminino</option>
                     <option value="Prefiro não informar">Prefiro não informar</option>
                 </select>
                 
-                <button id="submit">Enviar</button>
+                <button name="submit" type="submit" id="submit">Enviar</button>
             </form>
 
             <p>Já tem cadastro? 
