@@ -59,7 +59,7 @@
     padding: 10px;
   }
   
-  button::before {
+  #enviar::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(300px + 12px);
@@ -80,13 +80,13 @@
     transform: translateY(-6px);
   }
   
-  button:hover::before,
-  button:focus::before {
+  #enviar:hover::before,
+  #enviar:focus::before {
     opacity: 1;
   }
   
-  button:hover::after,
-  button:focus::after {
+  #enviar:hover::after,
+  #enviar:focus::after {
     content: '';
     width: 30px;
     height: 30px;

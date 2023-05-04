@@ -54,7 +54,7 @@
         <div class="animate__animated animate__bounceInUp" id="signup">
             <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 
-            <form autocomplete="off" action="signup.php" method="POST">
+            <form autocomplete="off" action="login.php" method="POST">
 
                  
                 <label for="inome">Nome</label>
@@ -82,7 +82,7 @@
             </form>
 
             <p>Já tem cadastro? 
-                <a href="login.html">Faça Login!</a></p>
+                <a href="login.php">Faça Login!</a></p>
         </div>
     </main>
 </body>

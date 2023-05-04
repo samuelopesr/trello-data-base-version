@@ -27,19 +27,19 @@
             <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 <form autocomplete="off" action="" method="POST">
 
-            <label for="inome">LOGIN</label>
-            <input  required placeholder="Login" id="ilogin" type="text" name="login">
+            <label for="inome">EMAIL</label>
+            <input  required placeholder="E-mail" id="ilogin" type="text" name="email">
                 
 
             <label for="isenha">SENHA</label>
             <input  required class="inputs" placeholder="Senha" id="isenha" type="text" name="senha">
                
         <div class="wrap">
-              <button type="submit" id="enviar">Entrar</button>
+              <button name="submit" type="submit" id="enviar">Entrar</button>
         </div>        
 
             <footer>Não tem cadastro? 
-            <a href="signup.html">Clique Aqui!</a></footer>
+            <a href="signup.php">Clique Aqui!</a></footer>
 </form>
         </div>
     </main>
