@@ -1,3 +1,32 @@
+<?php
+
+    if(isset($_POST['submit']))
+    {
+        // print_r('Nome: ' . $_POST['nome']);
+        // print_r('<br>');
+        // print_r('E-mail: ' . $_POST['email']);
+        // print_r('<br>');
+        // print_r('Senha: '.$_POST['senha']);
+        // print_r('<br>');
+        // print_r('Data de nascimento: '.$_POST['nascimento']);
+        // print_r('<br>');
+        // print_r('Sexo: '.$_POST['sexo']);
+        // print_r('<br>');
+
+        include_once('cfg.php');
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $data_de_nascimento = $_POST['nascimento'];
+        $sexo = $_POST['sexo'];
+
+        $result = mysqli_query($conexao, "INSERT INTO usuários(nome, email, senha, data_nascimento, sexo) VALUES ('$nome', '$email', '$senha', '$data_de_nascimento', '$sexo')");
+    }
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -25,7 +54,7 @@
         <div class="animate__animated animate__bounceInUp" id="signup">
             <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 
-            <form action="" method="POST">
+            <form autocomplete="off" action="signup.php" method="POST">
 
                  
                 <label for="inome">Nome</label>
