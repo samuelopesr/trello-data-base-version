@@ -59,7 +59,7 @@
     padding: 10px;
   }
   
-  #enviar::before {
+  input#enviar::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(300px + 12px);
@@ -74,19 +74,19 @@
     transition: all 0.3s ease-in-out 0s;
   }
   
-  #enviar:hover,
-  #enviar:focus {
+  input#enviar:hover,
+  input#enviar:focus {
     color: #313133;
     transform: translateY(-6px);
   }
   
-  #enviar:hover::before,
-  #enviar:focus::before {
+  input#enviar:hover::before,
+  input#enviar:focus::before {
     opacity: 1;
   }
   
-  #enviar:hover::after,
-  #enviar:focus::after {
+  input#enviar:hover::after,
+  input#enviar:focus::after {
     content: '';
     width: 30px;
     height: 30px;

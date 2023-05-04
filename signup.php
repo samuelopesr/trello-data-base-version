@@ -54,7 +54,7 @@
         <div class="animate__animated animate__bounceInUp" id="signup">
             <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 
-            <form autocomplete="off" action="login.php" method="POST">
+            <form autocomplete="off" action="" method="POST">
 
                  
                 <label for="inome">Nome</label>

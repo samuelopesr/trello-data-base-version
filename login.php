@@ -25,7 +25,7 @@
        
         <div class="animate__animated animate__bounceInUp" id="login">
             <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
-<form autocomplete="off" action="" method="POST">
+<form autocomplete="off" action="testelogin.php" method="POST">
 
             <label for="inome">EMAIL</label>
             <input  required placeholder="E-mail" id="ilogin" type="text" name="email">
