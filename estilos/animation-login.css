@@ -59,7 +59,7 @@
     padding: 10px;
   }
   
-  input#enviar::before {
+  #enviar::before {
     content: '';
     border-radius: 1000px;
     min-width: calc(300px + 12px);
@@ -74,19 +74,19 @@
     transition: all 0.3s ease-in-out 0s;
   }
   
-  input#enviar:hover,
-  input#enviar:focus {
+  #enviar:hover,
+  #enviar:focus {
     color: #313133;
     transform: translateY(-6px);
   }
   
-  input#enviar:hover::before,
-  input#enviar:focus::before {
+  #enviar:hover::before,
+  #enviar:focus::before {
     opacity: 1;
   }
   
-  input#enviar:hover::after,
-  input#enviar:focus::after {
+  #enviar:hover::after,
+  #enviar:focus::after {
     content: '';
     width: 30px;
     height: 30px;
