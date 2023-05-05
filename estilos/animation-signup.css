@@ -106,7 +106,9 @@
     height: 40px;
     border-bottom: 5px solid rgb(33, 83, 221);
     border-image:linear-gradient(to right, #7e4157, #ee8497, #FF9D8E) 10;
+    color: white;
 }
+
 
 select{
    font-family: ts;
@@ -185,3 +187,5 @@ section{
       background-position-x: -1000px; 
     }
   }
+
+  
