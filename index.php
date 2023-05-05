@@ -34,6 +34,17 @@
 
     Feito por um código em JS linkado ao meu HTML
 -->
+<?php
+    session_start();
+    print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    $logado = $_SESSION['email'];
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -98,6 +109,11 @@
                         </div>
                         <div id="conta">
                             <h1>SL</h1>
+                            <div class="box-2">
+                                <div class="btn btn-two">
+                                <span>HOVER ME</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </ul>
