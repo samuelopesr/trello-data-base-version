@@ -30,17 +30,17 @@
             <label for="inome">EMAIL</label>
             <input  required placeholder="E-mail" id="ilogin" type="text" name="email">
                 
-
             <label for="isenha">SENHA</label>
             <input  required class="inputs" placeholder="Senha" id="isenha" type="text" name="senha">
                
-        <div class="wrap">
+        
               <button name="submit" type="submit" id="enviar">Entrar</button>
-        </div>        
+               
 
-            <footer>Não tem cadastro? 
-            <a href="signup.php">Clique Aqui!</a></footer>
+    
 </form>
+<footer>Não tem cadastro? 
+            <a href="signup.php">Clique Aqui!</a></footer>
         </div>
     </main>
 </body>
