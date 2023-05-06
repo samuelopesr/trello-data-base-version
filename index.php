@@ -200,8 +200,9 @@
                     <div class="btn">
                     <span>Encerrar sessão</span>
                 </div>
-            </div>
+        </div>
     </main>
+    
     <script src="JavaScript/index.js"></script>
 </body>
 </html>

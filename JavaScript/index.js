@@ -330,6 +330,9 @@ trello2.addEventListener('mouseleave', () => {
 })
 
 
-const sair = document.querySelector('.sair')
+
+
+const openNow = document.querySelector('#conta')
+
 
 
