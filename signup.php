@@ -84,7 +84,7 @@ if(isset($_POST['submit']))
             </div>
 
             <form autocomplete="off" action="" method="POST">
-            <h1><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
+            <h1 id="h1"><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 
                  
                 <label for="inome">Nome</label>
