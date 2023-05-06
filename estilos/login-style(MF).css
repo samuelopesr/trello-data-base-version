@@ -43,16 +43,23 @@ form > label{
     font-family: k;
 }
 
-
+#h1{
+    text-align: center;
+}
 img{
     width: 190px;
     margin-top: 10px;
 }
 footer{
-    color: rgb(0, 0, 0);
+    
+    color: white;
     text-align: center;
 }
 footer > a{
     text-decoration: none;
     color: #270713;
+}
+
+#animation{
+   display: none; 
 }
