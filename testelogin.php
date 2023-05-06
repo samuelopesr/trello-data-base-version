@@ -26,7 +26,13 @@ session_start();
                 unset($_SESSION['email']);
                 unset($_SESSION['senha']);
 
-               header('Location: login.php');
+                echo '<script>
+                alert("Digite um e-mail ou senha válidos")
+
+                if(alert){
+                    window.location.replace("login.php")
+                }
+                </script>';
 
 
             }
