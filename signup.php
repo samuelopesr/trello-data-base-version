@@ -1,28 +1,55 @@
 <?php
 
-    if(isset($_POST['submit']))
-    {
-        // print_r('Nome: ' . $_POST['nome']);
-        // print_r('<br>');
-        // print_r('E-mail: ' . $_POST['email']);
-        // print_r('<br>');
-        // print_r('Senha: '.$_POST['senha']);
-        // print_r('<br>');
-        // print_r('Data de nascimento: '.$_POST['nascimento']);
-        // print_r('<br>');
-        // print_r('Sexo: '.$_POST['sexo']);
-        // print_r('<br>');
+if(isset($_POST['submit']))
+{
+    include_once('cfg.php');
 
-        include_once('cfg.php');
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    $data_de_nascimento = $_POST['nascimento'];
+    $sexo = $_POST['sexo'];
 
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-        $data_de_nascimento = $_POST['nascimento'];
-        $sexo = $_POST['sexo'];
+    if (strlen($senha) < 8 || strlen($senha) > 16 || !preg_match('/[a-z]/', $senha) || !preg_match('/[A-Z]/', $senha) || !preg_match('/[0-9]/', $senha)) {
+        echo'<script>
+        alert("a senha deve conter no mínimo 8 dígitos, no máximo 16, e pelo menos uma letra minúscula, uma letra maiúscula e um número")
 
+        if(alert){
+            window.location.replace("signup.php")
+        }
+        </script>';
+    } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL) || !preg_match('/@(outlook|gmail|hotmail)\.(com|com\.br)$/', $email)) {
+        echo'<script>
+        alert("endereço de e-mail deve estar no formato correto, e apenas os provedores Outlook, Gmail e Hotmail são permitidos")
+
+        if(alert){
+            window.location.replace("signup.php")
+        }
+        </script>';
+    } elseif (!preg_match('/^[a-zA-Z\s]+$/', $nome)) {
+        echo'<script>
+        alert("nome deve conter apenas letras e espaços em branco")
+
+        if(alert){
+            window.location.replace("signup.php")
+        }
+        </script>';
+    } else {
         $result = mysqli_query($conexao, "INSERT INTO usuários(nome, email, senha, data_nascimento, sexo) VALUES ('$nome', '$email', '$senha', '$data_de_nascimento', '$sexo')");
+
+        if (!$result) {
+            echo'<script>
+        alert("Problema ao cadastrar o usuário!!")
+
+        if(alert){
+            window.location.replace("login.php")
+        }
+        </script>';
+        } else {
+            header('Location: login.php');
+        }
     }
+}
 
 ?>
 
