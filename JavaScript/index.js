@@ -328,3 +328,8 @@ trello2.addEventListener('mouseleave', () => {
     trello2.style.display = 'none';
     
 })
+
+
+const sair = document.querySelector('.sair')
+
+

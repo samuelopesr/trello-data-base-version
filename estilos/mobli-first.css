@@ -79,6 +79,92 @@ header{
     height: 20px;
     width: 90px;
 }
+
+.sair{
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 999999;
+    width: 400px;
+    height: 250px;
+    background: rgba(131, 35, 35, 0.558);
+    box-shadow: 0 8px 32px 0 rgba(3, 3, 9, 0.54);
+    backdrop-filter: blur( 15.5px );
+    -webkit-backdrop-filter: blur( 15.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    right: 10px;
+    top: 70px;
+}
+.sair > #sairBTN{
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
+}
+div.box-2{
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 70px;
+    height: 33.33%;
+    width: 62%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d25b5b;
+}
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+  }
+  .btn {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative; 
+  }
+  .btn span {
+    z-index: 2; 
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+  }
+  .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  .btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 0, 0, 0.2);
+    background-color: rgba(255, 0, 0, 0.1);
+  }
+  .btn:hover::before {
+    transform: rotate(-45deg);
+    background-color: rgba(255, 0, 0, 0);
+  }
+  .btn:hover::after {
+    transform: rotate(45deg);
+    background-color: rgba(255, 0, 0, 0);
+  }
 #trello-menu-principal:hover{
     background-color: #3a5975;
     border-radius: 6%;
@@ -169,7 +255,7 @@ header{
     margin-top: 5px;
     width: 35px;
     height: 35px;
-    overflow: hidden;
+
 }
 #pequisa-sino-conta > #conta > h1{
     font-size: 1em;

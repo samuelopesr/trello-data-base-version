@@ -99,6 +99,8 @@
                             <img src="imagens/plus.png" alt="button-mais">
                         </div>
                         </div>
+                    
+                        
                     <li><div id="pequisa-sino-conta">
                         <div id="pesquisa">
                             <img src="imagens/search-interface-symbol.png" alt="icon-pesquisa">
@@ -109,15 +111,13 @@
                         </div>
                         <div id="conta">
                             <h1>SL</h1>
-                            <div class="box-2">
-                                <div class="btn btn-two">
-                                <span>HOVER ME</span>
-                                </div>
                             </div>
                         </div>
                     </div>
+                    
                 </ul>
             </menu>
+           
         </header>
         <section id="menu-lateral">
             <div id="quadros-modelo-inicio">
@@ -194,6 +194,13 @@
                 </section>
             </section>
         </article>
+        <div class="sair" >
+            <button id="sairBTN">X</button>
+                <div class="box-2">
+                    <div class="btn">
+                    <span>Encerrar sessão</span>
+                </div>
+            </div>
     </main>
     <script src="JavaScript/index.js"></script>
 </body>
