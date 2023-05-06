@@ -23,6 +23,16 @@
 //Dentro desse quadro temos dois conteúdos, um botão que excluir o quadro e atualiza o array do local storage verifica e retira o quadro
 //O outro botão acessa o quadro porém não guarda a escolha do usuário
 
+const abrirSession = document.querySelector('#conta')
+abrirSession.addEventListener('click', ()=>{
+    document.querySelector('.sair').style.display = "block";
+})
+
+const closeSession = document.querySelector('#sairBTN')
+closeSession.addEventListener('click', () => {
+    document.querySelector('.sair').style.display = "none";
+})
+
 function indIspo()
 {
     alert('página indisponível');
@@ -329,10 +339,6 @@ trello2.addEventListener('mouseleave', () => {
     
 })
 
-
-
-
-const openNow = document.querySelector('#conta')
 
 
 

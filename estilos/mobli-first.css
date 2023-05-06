@@ -221,8 +221,7 @@ div.box-2{
   
 }
 #modelos{
-    display: none;
-    
+    display: none;  
 }
 #pequisa-sino-conta{
     display: flex;
@@ -232,7 +231,7 @@ div.box-2{
     margin-top: 5px;
     margin-left: 9px;
     left:68%;
-    
+
 }
 #pequisa-sino-conta > #pesquisa{
     margin-top: 10px;
