@@ -198,7 +198,7 @@
             <button id="sairBTN">X</button>
                 <div class="box-2">
                     <div class="btn">
-                    <span>Encerrar sessão</span>
+                    <a href="sair.php">Encerrar sessão</a>
                 </div>
         </div>
     </main>
