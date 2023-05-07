@@ -23,6 +23,22 @@
 //Dentro desse quadro temos dois conteúdos, um botão que excluir o quadro e atualiza o array do local storage verifica e retira o quadro
 //O outro botão acessa o quadro porém não guarda a escolha do usuário
 
+
+const password = document.getElementById('isenha');
+    const icon = document.getElementById('icon');
+
+    function showHidden(){
+        if(password.type == 'password'){
+            password.setAttribute('type','text');
+            icon.classList.add('hide')
+        }
+        else{
+            password.setAttribute('type','password');
+            icon.classList.remove('hide')
+        }
+    }
+
+
 const abrirSession = document.querySelector('#conta')
 abrirSession.addEventListener('click', ()=>{
     document.querySelector('.sair').style.display = "block";

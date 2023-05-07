@@ -33,11 +33,17 @@
 
 <h1 id="h1"><img src="imagens/87e1af770a49ce8e84e3.gif" alt=""></h1>
 
-            <label for="inome">EMAIL</label>
+            <label for="ilogin">EMAIL</label>
             <input  required placeholder="E-mail" id="ilogin" type="text" name="email">
-                
+
+            <img src="../trello-data-base-version/imagens/user.png" id="user_login" alt="userlogin">
+
+
+              
             <label for="isenha">SENHA</label>
-            <input  required class="inputs" placeholder="Senha" id="isenha" type="text" name="senha">
+            <input  required class="inputs" placeholder="Senha" id="isenha" type="password" name="senha">
+
+            <img id="icon" onclick="showHidden()" src="../trello-data-base-version/imagens/view.png" alt="">
                
         
               <button name="submit" type="submit" id="enviar">Entrar</button>
@@ -49,5 +55,6 @@
             <a href="signup.php">Clique Aqui!</a></footer>
         </div>
     </main>
+    <script src="../trello-data-base-version/JavaScript/index.js"></script>
 </body>
 </html>

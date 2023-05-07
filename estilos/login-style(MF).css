@@ -63,3 +63,18 @@ footer > a{
 #animation{
    display: none; 
 }
+
+#icon{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.hide{
+    background: url(../imagens/hidden.png);
+    cursor: pointer;
+}
+
+#user_login{
+    width: 23px;
+    height: 23px;
+}
