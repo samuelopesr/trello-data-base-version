@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: "tommy";
-    src: url(../font/tommy-soft/MADE\ Tommy\ Soft\ Medium\ PERSONAL\ USE.otf) format('opentype');
+    src: url(../font/tommy-soft/MADE\ Tommy\ Soft\ Regular\ PERSONAL\ USE.otf) format('opentype');
 }
-@font-face {
+@font-face {    
     font-family: "kiona";
     src: url(../font/kiona/Kiona-Regular.ttf) format('truetype');
 }
@@ -560,7 +560,7 @@ header{
 }
 
 button#btn-addtask1{
-    font-family: "keepcalm";
+    font-family: keepcalm;
     position: relative;
     cursor: pointer;
     color: #ffffff;
@@ -615,10 +615,10 @@ button#btn-addtask3{
     padding: 10px;
     font-size: 1.2em;
     background: rgba(255, 255, 255, 0.493);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 0px 0px 10px 10px;
 }
 #tog{
     font-family: "kiona";
@@ -627,10 +627,10 @@ border-radius: 0px 0px 10px 10px;
     padding: 10px;
     font-size: 1.2em;
     background: rgba(255, 255, 255, 0.493);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 0px 0px 10px 10px;
 }
 #tc{
     font-family: "kiona";
@@ -639,10 +639,10 @@ border-radius: 0px 0px 10px 10px;
     padding: 10px;
     font-size: 1.2em;
     background: rgba(255, 255, 255, 0.493);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 6px );
--webkit-backdrop-filter: blur( 6px );
-border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 0px 0px 10px 10px;
 }
 .tarefa {
     width: 100%;
