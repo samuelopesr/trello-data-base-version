@@ -261,7 +261,7 @@ function renderizarQuadros() {
     const btnOpen = document.createElement("button")
     btnOpen.classList.add("btnOpen")
     btnOpen.addEventListener("click", () => {
-      const temaSalvo = localStorage.getItem('tema')//ira ser um bjeto identificando o quadro
+      const temaSalvo = JSON.parse(localStorage.getItem(tema)) //ira ser um bjeto identificando o quadro
 
       if (temaSalvo === 'claro'){
         window.location.replace("página do trello.html")
@@ -300,7 +300,8 @@ function salvarQuadros() {
 
 //vai ser uma função que 
 function salvaTema(tema){
-  localStorage.setItem('tema', tema)
+  let mytheme = {tema: tema}
+  localStorage.setItem(tema, JSON.stringify(mytheme))
 }
 
 
